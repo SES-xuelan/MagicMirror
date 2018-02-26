@@ -90,23 +90,23 @@ fi
 
 # Install MagicMirror
 cd ~
-if [ -d "$HOME/MagicMirror" ] ; then
-	echo -e "\e[93mIt seems like MagicMirror is already installed."
-	echo -e "To prevent overwriting, the installer will be aborted."
-	echo -e "Please rename the \e[1m~/MagicMirror\e[0m\e[93m folder and try again.\e[0m"
-	echo ""
-	echo -e "If you want to upgrade your installation run \e[1m\e[97mgit pull\e[0m from the ~/MagicMirror directory."
-	echo ""
-	exit;
-fi
+#if [ -d "$HOME/MagicMirror" ] ; then
+#	echo -e "\e[93mIt seems like MagicMirror is already installed."
+#	echo -e "To prevent overwriting, the installer will be aborted."
+#	echo -e "Please rename the \e[1m~/MagicMirror\e[0m\e[93m folder and try again.\e[0m"
+#	echo ""
+#	echo -e "If you want to upgrade your installation run \e[1m\e[97mgit pull\e[0m from the ~/MagicMirror directory."
+#	echo ""
+#	exit;
+#fi
 
-echo -e "\e[96mCloning MagicMirror ...\e[90m"
-if git clone https://github.com/MichMich/MagicMirror.git; then 
-	echo -e "\e[92mCloning MagicMirror Done!\e[0m"
-else
-	echo -e "\e[91mUnable to clone MagicMirror."
-	exit;
-fi
+#echo -e "\e[96mCloning MagicMirror ...\e[90m"
+#if git clone https://github.com/MichMich/MagicMirror.git; then 
+#	echo -e "\e[92mCloning MagicMirror Done!\e[0m"
+#else
+#	echo -e "\e[91mUnable to clone MagicMirror."
+#	exit;
+#fi
 
 cd ~/MagicMirror  || exit
 echo -e "\e[96mInstalling dependencies ...\e[90m"
